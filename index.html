@@ -10,10 +10,21 @@
 <body>
     <div class="container">
         <div id="home" class="flex-center flex-column">
-            <h1>Quiz</h1>
+            <h1>Quiz Bonico</h1>
+            <button onclick="loginWithGoogle()" id="botonLogin">Accede con Google</button>
+            <button onclick="signOut()" id="botonSignOut" class="display" disabled>Sign Out</button>
             <a class="btn" href="./game.html">Juega</a>
-            <a class="btn" href="./game.html">Máximas puntuaciones</a>
+            <a class="btn" href="./highscores.html">Máximas puntuaciones</a>
         </div>
     </div>
+
+
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+       <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+       <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+       <script src="./auth.js"></script>
 </body>
 </html>

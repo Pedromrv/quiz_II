@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felicidades!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-center flex-column" id="end">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input 
+                type="text" 
+                name="username" 
+                id="username" placeholder="username">
+                <button 
+                type="submit" 
+                class="btn" id="saveScoreBtn"
+                onclick="saveHighScore(event)"
+                disabled
+                >Guardar</button>
+            </form>
+            <a href="./game.html" class="btn">Juega de nuevo</a>
+            <a href="./" class="btn">¡A casa!</a>
+        </div>
+    </div>
+    <script src="./end.js"></script>
+</body>
+</html>
